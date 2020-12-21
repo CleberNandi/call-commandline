@@ -20,7 +20,28 @@ Por enquanto sem dependências
 ## 🔥 Instalação e execução
 
 1. Faça um clone desse repositório;
-2. Entre na pasta `cd framework`;
+2. Entre na pasta `cd call-commandline`;
+3. Criar uma instância da classe `Cmd`;
+4. Ao criar a classe acima, ele irá executár um método dinâminco.
+5. Os argumentos passados para o método serão para o comando.
+
+Exemplo_1:
+
+Prompt = Cmd()
+outupt, error = Prompt.dir()
+print(output)
+
+Exemplo_2:
+
+Prompt = Cmd()
+outupt, error = Prompt.echo("executando echo.")
+print(output)
+
+Exemplo_3:
+
+Prompt = Cmd()
+outupt, error = Prompt.cmd("/c", "executavel.exe")
+print(output)
 
 ## ⚡️ Como contribuir
 
